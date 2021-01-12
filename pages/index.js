@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import { Auth0Provider } from '@auth0/auth0-react';
 import LoginButton from '../components/login';
 
@@ -8,7 +7,7 @@ export default function Home() {
     <Auth0Provider
       domain="dev-9g1kpe42.jp.auth0.com"
       clientId="6Ny5q9T1WShB7ivinhDtEFZrh5dHPygi"
-      redirectUri="http://localhost:3000/star-match"
+      redirectUri="http://localhost:3000/mini-game"
     >
       <div className="container">
         <Head>
@@ -26,6 +25,30 @@ export default function Home() {
           </p>
 
           <LoginButton />
+
+          <div className="grid">
+            <a
+              href="https://github.com/vercel/next.js/tree/master/examples"
+              className="card"
+            >
+              <h3>Examples &rarr;</h3>
+              <p>
+                Discover and deploy boilerplate example Next.js
+                projects.
+              </p>
+            </a>
+
+            <a
+              href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+              className="card"
+            >
+              <h3>Deploy &rarr;</h3>
+              <p>
+                Instantly deploy your Next.js site to a public URL
+                with Vercel.
+              </p>
+            </a>
+          </div>
         </main>
 
         <footer>
